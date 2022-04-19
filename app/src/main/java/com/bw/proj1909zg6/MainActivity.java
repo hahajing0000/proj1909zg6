@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<String> list=new ArrayList<>();
         list.add("1");
-//        list.add(10);
+        list.add("10");
 //        list.add(100.0f);
 //        list.add(1000L);
 
