@@ -14,10 +14,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:text="@{own.testTxt}"
+        <EditText
+            android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></TextView>
+            android:layout_height="wrap_content"
+            android:text="@={own.testTxt}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></EditText>
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_main_clicktest"
+            android:onClick="@{(v)->own.onClick(v)}"
+            app:layout_constraintTop_toBottomOf="@+id/textView"></Button>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
