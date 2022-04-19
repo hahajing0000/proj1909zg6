@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding binding= DataBindingUtil.setContentView(this,R.layout.activity_main);
         binding.setOwn(this);
 
+        getLifecycle().addObserver(new BasePersenter());
+
 //        btnTest = (Button) findViewById(R.id.btn_test);
 //        btnTest.setOnClickListener(new View.OnClickListener() {
 //            @Override
